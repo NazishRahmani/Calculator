@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:3000/Calculator.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Calculator2_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(209, 238, 238);
+      }
+      #calculator {
+        background-color: rgb(254, 254, 254);
+        padding-top: 30px;
+        border-radius: 8px;
+        max-width:320px;
+        height: max-content;
+        margin: 45px auto;
+        box-shadow: 1px 1px 40px white ;
+      }
+      .box {
+        outline: 2px solid rgb(186, 240, 241);
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 5%;
+        background-color: aliceblue;
+        height: 70px;
+      }
+      .buttom-container {
+        display: flex;
+        padding: 25px 45px;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 5px 0px;
+      }
+
+      button {
+        border: 2px solid rgb(173, 171, 171);
+        height: 55px;
+        width: 60px;
+        border-radius: 4px;
+        font-size: 25px;
+        transition: ease 0.2s;
+      }
+      button:hover {
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+      }
+      box:hover {
+        cursor: pointer;
+      }
+
+      input:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <input class="box" type="text">
+      <div class="buttom-container">
+        <button onclick="
+            currentDisplay=&#39;&#39;;
+            document.querySelector(&#39;.box&#39;).value=currentDisplay;
+            ">
+          C
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;1&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          1
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;2&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          2
+        </button>
+
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;+&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          +
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;3&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          3
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;4&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          4
+        </button>
+
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;-&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          -
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;5&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          5
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;6&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          6
+        </button>
+
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;*&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          *
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;7&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          7
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;8&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          8
+        </button>
+
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;/&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          /
+        </button>
+        <button onclick="
+        currentDisplay=eval(currentDisplay);
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          =
+        </button>
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;9&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          9
+        </button>
+
+        <button onclick="
+        currentDisplay=currentDisplay + &#39;0&#39;;
+        document.querySelector(&#39;.box&#39;).value = currentDisplay;">
+          0
+        </button>
+        <button onclick="
+        currentDisplay+=&#39;.&#39;;
+        document.querySelector(&#39;.box&#39;).value=currentDisplay;
+        ">
+          .
+        </button>
+      </div>
+    </div>
+    <script>
+      let currentDisplay = "";
+      document.querySelector(".box").value = currentDisplay;
+    </script>
+  
+
+</body></html>
